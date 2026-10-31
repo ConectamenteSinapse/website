@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipe Sinapse | ConectaMente</title>
+  <meta name="description" content="Equipe de desenvolvimento de software criadora do ConectaMente, jogo sério que apoia a autonomia de pessoas com Síndrome de Down.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="topo">
+  <div class="container nav__inner">
+    <a href="#inicio" class="brand"><img src="assets/logo-sinapse.png" alt="Sinapse" class="brand__logo"></a>
+    <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav__links">
+      <a href="#sobre">Sobre</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#projeto">ConectaMente</a>
+      <a href="#pitch" class="btn btn--sm btn--yellow">Ver pitch</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__text reveal">
+        <span class="tag">&lt;/&gt; Equipe Sinapse · Desenvolvimento de Software</span>
+        <h1>Transformando ideias em <span class="hl">soluções digitais.</span></h1>
+        <p class="lead">Somos uma equipe de desenvolvimento de software que une tecnologia, pesquisa e colaboração para criar soluções digitais funcionais, acessíveis e centradas nas pessoas.</p>
+        <div class="hero__actions">
+          <a href="#equipe" class="btn btn--yellow">Conheça nossa equipe</a>
+          <a href="#projeto" class="btn btn--ghost">Explore nossos projetos</a>
+        </div>
+        <div class="hero__avatars">
+          <div class="stack">
+            <span class="avatar" data-photo="assets/fotos/ricardo.jpg" data-initials="R"></span>
+            <span class="avatar" data-photo="assets/fotos/joao-pedro.jpg" data-initials="JP"></span>
+            <span class="avatar" data-photo="assets/fotos/lorenzo.jpg" data-initials="L"></span>
+            <span class="avatar" data-photo="assets/fotos/camile.jpg" data-initials="C"></span>
+          </div>
+          <small>4 integrantes · 1 propósito</small>
+        </div>
+      </div>
+      <div class="hero__visual reveal" aria-hidden="true">
+        <div class="code-card">
+          <div class="code-card__bar"><i></i><i></i><i></i><span>equipe.js</span></div>
+<pre><code><b>const</b> equipe = [<s>'back-end'</s>, <s>'front-end'</s>,
+  <s>'banco de dados'</s>, <s>'UX &amp; pesquisa'</s>];
+
+<b>function</b> <em>criar</em>(ideia) {
+  <b>return</b> ideia
+    .<em>pesquisar</em>()
+    .<em>desenvolver</em>(equipe)
+    .<em>tornarAcessivel</em>();
+}
+
+<em>criar</em>(<s>'soluções centradas nas pessoas'</s>); <u>// ✔</u></code></pre>
+        </div>
+        <div class="float-chip chip-1">🤝 Colaboração</div>
+        <div class="float-chip chip-2">💡 Inovação</div>
+        <div class="node n1"></div><div class="node n2"></div><div class="node n3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section" id="sobre">
+    <div class="container about">
+      <div class="reveal">
+        <span class="eyebrow">Sobre nós</span>
+        <h2>Uma equipe, quatro olhares, um mesmo objetivo.</h2>
+        <p>Somos uma equipe multidisciplinar de quatro integrantes. Cada pessoa assume uma responsabilidade específica — da estrutura técnica do sistema à pesquisa, à documentação e à compreensão das necessidades de quem vai usar o que construímos.</p>
+        <p>Acreditamos que software bom nasce da combinação entre organização, colaboração e escuta. Por isso, começamos pelas pessoas e pelos problemas reais antes de escrever a primeira linha de código.</p>
+      </div>
+      <div class="pillars">
+        <article class="pillar reveal"><span class="pillar__icon">⇄</span><h3>Colaboração</h3><p>Decisões construídas em conjunto, com papéis claros e comunicação constante.</p></article>
+        <article class="pillar reveal"><span class="pillar__icon">{ }</span><h3>Desenvolvimento</h3><p>Back-end, front-end e dados integrados em soluções funcionais e sustentáveis.</p></article>
+        <article class="pillar reveal"><span class="pillar__icon">◎</span><h3>Pesquisa e inovação</h3><p>Embasamento científico e estudo do estado da arte para guiar cada escolha.</p></article>
+        <article class="pillar reveal"><span class="pillar__icon">♥</span><h3>Necessidades reais</h3><p>Tecnologia acessível, pensada para gerar impacto na vida das pessoas.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPE -->
+  <section class="section section--tint" id="equipe">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">Nossa equipe</span>
+        <h2>Quem faz acontecer</h2>
+        <p>Quatro especialidades que se complementam do dado à interface.</p>
+      </div>
+      <div class="team">
+        <article class="member reveal">
+          <div class="member__photo" data-photo="assets/fotos/ricardo.jpg" data-initials="R"></div>
+          <span class="member__role">Desenvolvedor Back-end</span>
+          <h3>Ricardo</h3>
+          <p>Responsável pela lógica do sistema e pela estruturação das funcionalidades, garantindo que tudo funcione de forma integrada nos bastidores.</p>
+          <ul class="skills"><li>Lógica de negócio</li><li>APIs</li><li>Integração de serviços</li></ul>
+        </article>
+        <article class="member reveal">
+          <div class="member__photo" data-photo="assets/fotos/joao-pedro.jpg" data-initials="JP"></div>
+          <span class="member__role">Desenvolvedor Front-end</span>
+          <h3>João Pedro</h3>
+          <p>Constrói a interface e a experiência visual, desenvolvendo os componentes com os quais os usuários interagem diretamente.</p>
+          <ul class="skills"><li>Interfaces</li><li>Componentes</li><li>Experiência visual</li></ul>
+        </article>
+        <article class="member reveal">
+          <div class="member__photo" data-photo="assets/fotos/lorenzo.jpg" data-initials="L"></div>
+          <span class="member__role">Desenvolvedor de Banco de Dados</span>
+          <h3>Lorenzo</h3>
+          <p>Cuida da modelagem, organização e gerenciamento dos dados, assegurando consistência e eficiência em toda a aplicação.</p>
+          <ul class="skills"><li>Modelagem</li><li>Estruturação de dados</li><li>Desempenho</li></ul>
+        </article>
+        <article class="member reveal">
+          <div class="member__photo" data-photo="assets/fotos/camile.jpg" data-initials="C"></div>
+          <span class="member__role">Pesquisa, Documentação e UX</span>
+          <h3>Camile</h3>
+          <p>Conduz a pesquisa com usuários, o levantamento de requisitos e a documentação, organizando as informações que orientam as funcionalidades.</p>
+          <ul class="skills"><li>Pesquisa com usuários</li><li>Requisitos</li><li>Documentação</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETO -->
+  <section class="section project" id="projeto">
+    <div class="container">
+      <div class="project__intro">
+        <div class="reveal">
+          <span class="eyebrow eyebrow--light">Nosso projeto</span>
+          <h2 class="project__title">Conecta<span>Mente</span></h2>
+          <p class="project__lead">Um jogo sério que ajuda pessoas com Síndrome de Down a desenvolver autonomia nas tarefas do cotidiano — da rotina aos cuidados pessoais — por meio de gamificação, desafios e progressão por níveis.</p>
+          <div class="ods"><span>ODS 3 · Saúde e Bem-Estar</span><span>ODS 4 · Educação de Qualidade</span><span>ODS 10 · Redução das Desigualdades</span></div>
+        </div>
+        <div class="pitch-box reveal" id="pitch">
+          <div class="float-chip chip-1">♿ Acessibilidade</div>
+          <div class="float-chip chip-2">🎮 Jogo sério</div>
+          <span class="pitch-box__label">▶ Pitch · Conheça o ConectaMente</span>
+          <div class="video">
+            <video controls preload="metadata" playsinline>
+              <source src="assets/pitch.mp4" type="video/mp4">
+              Seu navegador não suporta vídeo. <a href="assets/pitch.mp4">Baixe o pitch</a>.
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="facts">
+        <article class="fact reveal"><span class="fact__k">O problema</span><p>Adaptar recursos de ensino e desenvolver autonomia ainda é um desafio: há mais de <strong>1,3 milhão</strong> de alunos com deficiência na Educação Básica, <strong>93,3%</strong> em salas regulares (Censo Escolar 2020).</p></article>
+        <article class="fact reveal"><span class="fact__k">Público-alvo</span><p>Pessoas com Síndrome de Down (trissomia do cromossomo 21), com apoio de familiares e educadores no processo de aprendizagem das rotinas diárias.</p></article>
+        <article class="fact reveal"><span class="fact__k">Objetivo</span><p>Auxiliar na aprendizagem e organização da rotina diária com atividades interativas que estimulem decisões, organização pessoal e independência.</p></article>
+      </div>
+
+      <h3 class="features__title reveal">Funcionalidades</h3>
+      <div class="features">
+        <div class="feature reveal"><b>01</b><h4>Níveis progressivos</h4><p>O jogador avança conforme aprende, no seu próprio ritmo.</p></div>
+        <div class="feature reveal"><b>02</b><h4>Tarefas do cotidiano</h4><p>Organizar objetos, escolher roupas, guardar pertences e higiene pessoal.</p></div>
+        <div class="feature reveal"><b>03</b><h4>Interface acessível</h4><p>Imagens, sons, animações e comandos simples para facilitar a compreensão.</p></div>
+        <div class="feature reveal"><b>04</b><h4>Feedback e recompensas</h4><p>Retorno imediato e conquistas que reforçam a memorização e os hábitos.</p></div>
+      </div>
+
+      <div class="impact reveal">
+        <div><strong>Tecnologia</strong><span>como meio</span></div>
+        <i>→</i>
+        <div><strong>Acessibilidade</strong><span>como princípio</span></div>
+        <i>→</i>
+        <div><strong>Autonomia</strong><span>como resultado</span></div>
+        <i>→</i>
+        <div><strong>Impacto social</strong><span>como propósito</span></div>
+      </div>
+
+      <div class="play-cta reveal">
+        <div>
+          <h3>Pronto para jogar?</h3>
+          <p>Experimente o ConectaMente e conheça os desafios do dia a dia.</p>
+        </div>
+        <!-- TROQUE o "#" abaixo pelo link do jogo -->
+        <a href="#" class="btn btn--yellow btn--lg" id="link-jogo" target="_blank" rel="noopener">🎮 Acessar o jogo <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="#inicio" class="brand"><img src="assets/logo-sinapse.png" alt="Sinapse" class="brand__logo"></a>
+    <a href="#inicio" class="footer__top">Voltar ao topo ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
