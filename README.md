@@ -53,13 +53,36 @@ Depois acesse http://localhost:5510
 
 ## Link do jogo
 
-O botão **Acessar o jogo** aponta hoje para `http://localhost:3000`, que é o endereço do **servidor local** onde o ConectaMente roda durante o desenvolvimento.
+O botão **Acessar o jogo** abre o ConectaMente já publicado na internet:
 
-**Por que usamos esse link?** Não faria sentido a página apresentar o jogo e não ter um lugar para acessá-lo. Como o ConectaMente ainda não está publicado na internet, colocamos o endereço do servidor local para o botão não ficar sem destino, como um elemento só decorativo.
+👉 **https://frontend-five-psi-1bpa6grdgm.vercel.app/**
 
-**O que isso significa na prática:** por enquanto, o botão só funciona no computador onde o jogo estiver rodando (`localhost:3000`). Em outros computadores, ele não abre o jogo.
+### Como o jogo está hospedado
 
-**Próximo passo:** quando o jogo for publicado e tiver um endereço na internet, vamos trocar esse link para que qualquer pessoa consiga jogar. Para isso, basta abrir o `index.html`, procurar `id="link-jogo"` e substituir o `href` pelo novo endereço.
+| Parte | Plataforma |
+|---|---|
+| Front-end (interface do jogo) | Vercel |
+| Back-end (API) | Render |
+
+Esta landing page é só a vitrine do projeto. O jogo em si é uma aplicação separada, com front-end e back-end hospedados de forma independente.
+
+### ⚠️ Aviso: o jogo pode demorar ou travar
+
+O ConectaMente é uma aplicação **pesada**, com muitos elementos visuais e interativos, e a hospedagem que usamos tem recursos limitados. Por isso, ao acessar o jogo, **pode haver lentidão e até travamentos**. Isso é uma limitação de desempenho da hospedagem, e não um erro de funcionamento do jogo.
+
+O que pode acontecer:
+
+- **Primeiro acesso lento:** o back-end na Render pode levar alguns instantes para responder quando ficou um tempo sem uso. Aguarde o carregamento antes de clicar de novo.
+- **Travamentos durante o jogo:** por causa do peso da aplicação, a tela pode congelar por alguns segundos.
+
+Dicas para uma melhor experiência:
+
+1. Aguarde a tela carregar por completo antes de interagir.
+2. Se travar, **recarregue a página** (F5) e espere de novo.
+3. Prefira o **computador** e um navegador atualizado (Chrome, Edge ou Firefox).
+4. Feche outras abas e programas pesados e use uma conexão de internet estável.
+
+Mesmo com essa limitação, o jogo está publicado e funcional para quem quiser conhecer e testar o ConectaMente.
 
 ## Paleta de cores
 
